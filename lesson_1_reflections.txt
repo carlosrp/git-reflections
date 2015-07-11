@@ -1,0 +1,11 @@
+- Using diff requires some getting used to: how to read the symbols and lines quickly
+- But a tool to quickly find differences between source code files is always essential.
+- Version control helps you managing baselines/versions, and what changes are introduced
+- "Scheduled" commits could save inconsistent versions/baselines
+- Although, it could be useful as a regular "nighlty" build (Continuous Integration). But it woudl require responsibility in finishing thing properly. Seems too difficult!
+- Definetely, manual commits with consistent and complete changes seems the logical option.
+- Treating closely related files in one commit will help maintaining consistency (e.g., avoiding saving one but not the other when they depend very much on each other).
+- git log: lists sequence of commits, with its corresponding id's
+- git diff (commit older) (commit newer): lists the exact differences, the same way diff would do, between both those two commits
+- Errors introduced accidentaly could be found by using successive git checkouts until we find out where the error is introduced; this requires that we do commits regularly, or it wouldn't be very helpful.
+
