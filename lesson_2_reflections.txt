@@ -4,8 +4,13 @@ Git creates the database with the repository info (files incldued, commits, hist
 
 - How is the staging area different from the working directory and the repository? What value does it offer?
 
-Staging area includes work-in-progress controlled files (before they are committed, or being changed but not ready to commit).
+WRONG => Staging area includes work-in-progress controlled files (before they are committed, or being changed but not ready to commit).
+It's actually an area where a spanshot of a controlled file is waiting to be committed. It allows to add one (or more) files and not others.
 
 Working directory also contains current version of controlled files, but also it may contain other files that are not controlled: they will never be included in any commit.
 
 The respository includes snapshots of controlled files, once they are deemed ready to be controlled. They establish a baseline. It includes all successive commits (history).
+
+- How canyou use the staging area to make sure you have one commit per logical change?
+
+You only git add the files that include that logical change, not the rest of files, and then commit those into the repository.
