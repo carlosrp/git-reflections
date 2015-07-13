@@ -22,3 +22,12 @@ For instance, when a new release with new functinalities, while maintaining and 
 - How do the diagrams help you visualise the branch structure?
 
 Seeing graphically what you can do with branches can really help understand the different changes and branches. Otherwise, it could get quite complicated. It's like sequence diagrams.
+
+- What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+It incorporates commits from merged branches into the same file, unless there is any conflict (e.g., modified same section differently). Branches are separate, have their own commits, until they are merged.
+
+- What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+Automatic merging is quick and handy, when it works. But when there are conflicting changes you will want to review what are the right changes that shoudl remain in the file.
+
